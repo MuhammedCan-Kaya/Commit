@@ -17,7 +17,9 @@ Commit Mesajlarının Önemi
   bir boşluk olmalı, yazılanlar kendini tekrar etmemelidir.
 
 Commit Geçmişi
-  git log //bu komut ile bütün commit geçmişi kontrol edilir. En güncel committen başlayarak eskiye doğru sıralar.
-  
-  
-  
+  git log // Bu komut ile bütün commit geçmişi kontrol edilir. En güncel committen başlayarak eskiye doğru sıralar.
+  git checkout <commit_id> // Eski commite geçici olarak dönmek için kullanılır fakat yapılan değişiklikler kaybolabilir. 
+  git reset <commit_id> // Kalıcı olarak dönüp değişiklik yapmak için kullanılır ve sonrasındaki commit silinir.
+
+Committe İptali
+  git revert <commit_id> // Bu commiti iptal eder ve yeni bir commit oluşturarak iptal edilen commitin tersine işlem yaparak eski haline getirir.
